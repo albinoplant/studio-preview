@@ -29,7 +29,7 @@
     "content": {
       "type": "dynamiczone",
       "components": [
-        "section.hero"
+        "hero.hero"
       ],
       "pluginOptions": {
         "i18n": {

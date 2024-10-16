@@ -368,12 +368,14 @@ export interface ApiInfoInfo extends Schema.SingleType {
     singularName: 'info';
     pluralName: 'infos';
     displayName: 'Info';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     siteName: Attribute.String;
+    icon: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -412,7 +414,7 @@ export interface ApiPagePage extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    content: Attribute.DynamicZone<['section.hero']> &
+    content: Attribute.DynamicZone<['hero.hero']> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
